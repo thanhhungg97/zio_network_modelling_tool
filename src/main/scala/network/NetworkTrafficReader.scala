@@ -1,6 +1,4 @@
-package traffic
-
-import network.Vertex
+package network
 
 import scala.io.BufferedSource
 
@@ -12,7 +10,7 @@ object NetworkTrafficReader {
   def apply(): NetworkTrafficReader = TrafficReaderCsv()
 }
 
-private[traffic] case class TrafficReaderCsv() extends NetworkTrafficReader {
+private[network] case class TrafficReaderCsv() extends NetworkTrafficReader {
   override def read(filePath: String): List[NetworkTraffic] = {
     val bufferedSource = io.Source.fromFile(filePath)
     val trafficList = process(bufferedSource)

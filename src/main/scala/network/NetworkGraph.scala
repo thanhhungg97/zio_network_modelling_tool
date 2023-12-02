@@ -1,6 +1,5 @@
 package network
 
-import traffic.*
 
 trait NetworkGraph {
   def addEdge(edge: Edge): NetworkGraph

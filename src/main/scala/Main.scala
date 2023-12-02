@@ -1,5 +1,4 @@
-import network.{NetworkGraphReader, Vertex}
-import traffic.NetworkTrafficReader
+import network.{NetworkGraphReader, NetworkSimulator, NetworkTrafficReader, Vertex}
 
 @main def main: Unit =
   val graph = NetworkGraphReader().read("src/main/resources/network_graph.csv")

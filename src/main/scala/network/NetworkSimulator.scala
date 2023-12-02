@@ -1,5 +1,6 @@
+package network
+
 import network.NetworkGraph
-import traffic.NetworkTraffic
 
 class NetworkSimulator {
 
