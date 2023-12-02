@@ -21,7 +21,6 @@ private[network] case class NetWorkGraphReaderCsv() extends NetworkGraphReader {
 
   private def process(bufferedSource: BufferedSource): NetworkGraph = {
     var graph = NetworkGraph()
-
     bufferedSource.getLines.drop(1)
       .foreach(line => {
 
